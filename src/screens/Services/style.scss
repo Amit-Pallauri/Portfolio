@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.services-section {
+  background: #2a2c39;
+  // height: 120vh;
+  padding: 6em 0;
+  width: 100%;
+
+  .service-header {
+    margin-top: 1em;
+    h2 {
+      font-family: $theme-heading-font;
+      font-size: 4.4rem;
+    }
+  }
+
+  .cards-container {
+    .slick-dots {
+      bottom: -40px;
+    }
+
+    .slick-dots .slick-active button:before {
+      font-size: 20px;
+      color: white;
+    }
+
+    .slick-dots li button:before {
+      font-size: 20px;
+      color: $theme-text-color-fade;
+    }
+  }
+}

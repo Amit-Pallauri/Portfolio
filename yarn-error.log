@@ -1,0 +1,49 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\amitp\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add bootstrap
+
+PATH: 
+  C:\Users\amitp\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\amitp\bin;C:\Python311\Scripts;C:\Python311;C:\Python39\Scripts;C:\Python39;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\php-8.0.2-Win32-vs16-x64;C:\Program Files (x86)\PuTTY;C:\php-8.1.8;C:\Program Files\Amazon\AWSCLIV2;C:\Users\amitp\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\amitp\AppData\Local\Microsoft\WindowsApps;C:\Users\amitp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\php-8.0.2-Win32-vs16-x64;C:\Users\amitp\AppData\Local\Android\Sdk;C:\Users\amitp\AppData\Local\Yarn;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\amitp\AppData\Roaming\npm;node_modules\npm\bin;C:\Users\amitp\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  18.12.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\amitp\OneDrive\Desktop\portfolio\node_modules\@parcel\fs-search\fs-search.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "portfolio",
+    "version": "1.0.0",
+    "private": true,
+    "description": "portfolio",
+    "author": "Amit Pallauri",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean"
+    },
+    "dependencies": {
+      "gatsby": "^5.5.0",
+      "gatsby-plugin-sass": "^6.5.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "sass": "^1.57.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

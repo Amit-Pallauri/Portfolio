@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Poppins:wght@200&display=swap");
+
+// font families
+$theme-heading-font: "Cormorant Garamond", serif;
+$theme-body-font: "Poppins", sans-serif;
+
+// theme colors
+$theme-bg-color: #2a2c39;
+$theme-bg-color-dark: #252734;
+$theme-text-color: #fff;
+$theme-text-color-fade: #858792;
+$theme-border-color: #3b3d49;
+
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px;
+
+@mixin desktop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) and (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}

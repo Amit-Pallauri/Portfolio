@@ -1,0 +1,116 @@
+@import "../../styles/variables.scss";
+
+.header-container {
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  background: $theme-bg-color-dark;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  z-index: 1;
+
+  .hambar-icon {
+    display: none;
+  }
+
+  .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      width: 90px;
+      margin-right: 20px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .items {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    li {
+      color: $theme-text-color-fade;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    :hover {
+      color: white;
+    }
+  }
+
+  .btn-container {
+    .hire-me-btn {
+      width: 70%;
+      margin-left: auto;
+      font-weight: 700;
+      border: 1px solid $theme-border-color;
+      padding: 20px 10px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      cursor: pointer;
+
+      p {
+        margin: 0;
+      }
+
+      img {
+        margin-left: 10px;
+        width: 15px;
+      }
+    }
+  }
+
+  .hire-me-btn:hover {
+    background-color: #2e303d;
+    transition: all 0.5s ease;
+  }
+
+  @include tablet {
+    .hambar-icon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+
+    .items,
+    .hire-me-btn {
+      display: none;
+    }
+  }
+}
+
+.header-fixed {
+  // height: 120px;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  animation: smoothScroll 1s forwards;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
