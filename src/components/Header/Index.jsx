@@ -7,17 +7,19 @@ import Logo from "../../images/logo.png";
 const Header = () => {
   useEffect(() => {
     const header = document.querySelector(".header-container");
-    window.addEventListener("scroll", function () {
-      if (window.pageYOffset >= 5) {
-        header.classList.add("header-fixed");
-        let navbarheight = header.offsetHeight;
-        document.body.style.paddingTop = navbarheight + "px";
-      } else {
-        header.classList.remove("header-fixed");
-        document.body.style.paddingTop = "0";
-      }
-    });
-  }, [window]);
+    if(window !== "undefined"){
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset >= 5) {
+          header.classList.add("header-fixed");
+          let navbarheight = header.offsetHeight;
+          document.body.style.paddingTop = navbarheight + "px";
+        } else {
+          header.classList.remove("header-fixed");
+          document.body.style.paddingTop = "0";
+        }
+      });
+    }
+  }, []);
 
   return (
     <section className={`header-container`}>
