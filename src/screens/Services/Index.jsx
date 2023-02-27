@@ -1,5 +1,6 @@
 import React from "react";
-import VerticalCard from "../../components/VerticalCard";
+import loadable from "@loadable/component";
+const VerticalCard = loadable(() => import("../../components/VerticalCard"));
 import Slider, { InnerSlider } from "react-slick";
 import "./style.scss";
 

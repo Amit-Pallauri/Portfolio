@@ -6,8 +6,8 @@ import Logo from "../../images/logo.png";
 
 const Header = () => {
   useEffect(() => {
-    const header = document.querySelector(".header-container");
-    if(window !== "undefined"){
+    if(typeof window !== "undefined"){
+      const header = document.querySelector(".header-container");
       window.addEventListener("scroll", function () {
         if (window.pageYOffset >= 5) {
           header.classList.add("header-fixed");
