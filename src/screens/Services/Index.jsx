@@ -1,8 +1,7 @@
 import React from "react";
-import loadable from "@loadable/component";
-import Slider, { InnerSlider } from "react-slick";
+import Slider from "react-slick";
+import VerticalCard from "../../components/VerticalCard";
 import "./style.scss";
-const VerticalCard = loadable(() => import("../../components/VerticalCard"));
 
 const ServicesSection = () => {
   const settings = {

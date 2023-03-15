@@ -1,6 +1,7 @@
 import React from "react";
-import Icofont from "react-icofont";
+import loadable from "@loadable/component";
 import "./style.scss";
+const Icofont = loadable(() => import("react-icofont"));
 
 const VerticalCard = ({ data }) => {
   return (

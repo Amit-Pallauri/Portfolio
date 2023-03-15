@@ -5,9 +5,9 @@ import HambarIcon from "../../images/hambar.png";
 import Logo from "../../images/logo.png";
 import { navigate } from "gatsby";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import Icofont from "react-icofont";
-import { toast } from "react-hot-toast";
+import loadable from "@loadable/component";
 import { showToast } from "../../utils/showToast";
+const Icofont = loadable(() => import("react-icofont"));
 
 const Header = () => {
   const [show, setShow] = useState(false);
