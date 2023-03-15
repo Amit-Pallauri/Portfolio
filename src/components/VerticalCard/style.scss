@@ -39,4 +39,9 @@
       }
     }
   }
+
+  @include mobile {
+    height: auto;
+    margin-top: 40px;
+  }
 }

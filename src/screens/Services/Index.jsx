@@ -1,8 +1,8 @@
 import React from "react";
 import loadable from "@loadable/component";
-const VerticalCard = loadable(() => import("../../components/VerticalCard"));
 import Slider, { InnerSlider } from "react-slick";
 import "./style.scss";
+const VerticalCard = loadable(() => import("../../components/VerticalCard"));
 
 const ServicesSection = () => {
   const settings = {
@@ -44,11 +44,6 @@ const ServicesSection = () => {
 
   const SerivicesData = [
     {
-      icon: "icofont-calendar",
-      header: "UI/UX Design",
-      list: ["Landing Pages", "User Flow", "Wirframing", "Prototyping", "Mobile App Design"],
-    },
-    {
       icon: "icofont-code",
       header: "FE Development",
       list: ["HTML/CSS", "Javascript", "React JS", "Next Js", "JQuery", "Angular JS"],
@@ -58,9 +53,14 @@ const ServicesSection = () => {
       header: "BE Development",
       list: ["CMS", "NodeJs", "Express", "Typescript", "Template Engines"],
     },
+    {
+      icon: "icofont-calendar",
+      header: "UI/UX Design",
+      list: ["Landing Pages", "Wirframing"],
+    },
   ];
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
       <div className="container custom-container">
         <div className="row">
           <div className="col-12">
@@ -77,8 +77,8 @@ const ServicesSection = () => {
             </div>
             <div className="cards-container">
               <Slider {...settings}>
-                {SerivicesData.map((el) => {
-                  return <VerticalCard data={el} />;
+                {SerivicesData.map((el, i) => {
+                  return <VerticalCard key={i} data={el} />;
                 })}
               </Slider>
             </div>

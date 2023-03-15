@@ -10,9 +10,9 @@ const VerticalCard = ({ data }) => {
       </div>
       <h4 className="card-header">{data.header}</h4>
       <div className="card-content">
-        {data.list.map((skill) => {
+        {data.list.map((skill, i) => {
           return (
-            <div className="content-list">
+            <div className="content-list" key={i}>
               <Icofont icon="icofont-rounded-double-right" className="icon" />
               <p>{skill}</p>
             </div>

@@ -17,7 +17,7 @@ $laptop: 1024px;
 $desktop: 1440px;
 
 @mixin desktop {
-  @media (min-width: #{$laptop}) {
+  @media (min-width: #{$desktop}) {
     @content;
   }
 }
@@ -29,7 +29,7 @@ $desktop: 1440px;
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet}) and (max-width: #{$laptop}) {
+  @media (min-width: #{$tablet}) and (max-width: #{$laptop - 1}) {
     @content;
   }
 }

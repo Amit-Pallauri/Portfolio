@@ -5,6 +5,7 @@
   // height: 120vh;
   padding: 6em 0;
   width: 100%;
+  scroll-margin-top: 3em;
 
   .service-header {
     margin-top: 1em;
@@ -27,6 +28,18 @@
     .slick-dots li button:before {
       font-size: 20px;
       color: $theme-text-color-fade;
+    }
+  }
+
+  @include mobile {
+    padding: 4em 0;
+
+    .service-header {
+      margin-top: 1em;
+      h2 {
+        font-family: $theme-heading-font;
+        font-size: 2rem;
+      }
     }
   }
 }

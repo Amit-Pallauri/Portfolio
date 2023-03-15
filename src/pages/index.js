@@ -7,13 +7,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ServicesSection from "../screens/Services/Index";
 import Logo from "../images/logo.png";
+import { Toaster } from "react-hot-toast";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <HeroSection />
-      <ServicesSection />
-    </Layout>
+    <>
+      <Layout>
+        <HeroSection />
+        <ServicesSection />
+      </Layout>
+      <Toaster />
+    </>
   );
 };
 

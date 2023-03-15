@@ -17,12 +17,6 @@ body {
   user-select: none; /* Standard syntax */
 }
 
-// .container {
-//   @media only screen and (min-width: 992px) {
-//     width: 78%;
-//   }
-// }
-
 .custom-tag {
   position: relative;
   color: $theme-text-color-fade;
@@ -34,7 +28,40 @@ body {
   }
 }
 
-@media only screen and (max-width: 1050px) {
+.toaster-custom {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: $theme-body-font;
+  background-color: rgba(3, 4, 4, 0.558) !important;
+  color: white;
+}
+
+.no-drop {
+  cursor: no-drop !important;
+}
+
+.link-tag {
+  color: unset;
+  text-decoration: none;
+}
+
+.link-tag:hover {
+  color: unset;
+}
+
+.container {
+  @media only screen and (min-width: 992px) {
+    width: 78%;
+  }
+}
+
+@include tablet {
+  .mob-hide {
+    display: none;
+  }
+}
+
+@include mobile {
   .mob-hide {
     display: none;
   }
