@@ -5,8 +5,8 @@ import DownloadIcon from "../../images/download.png";
 const HeroSection = () => {
   const downloadResume = () => {
     var link = document.createElement("a");
-    link.href = window.location.href + "/" + "resume.pdf";
-    link.download = "AMIT_PALLAURI_3Y_MERN.pdf";
+    link.href = "/resume.pdf";
+    // link.download = "AMIT_PALLAURI_3Y_MERN.pdf";
     link.target = "_blank";
     link.dispatchEvent(new MouseEvent("click"));
   };
