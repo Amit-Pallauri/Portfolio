@@ -2,7 +2,7 @@
 
 .verticalcard-section {
   background-color: $theme-bg-color-dark;
-  margin-top: 80px;
+  margin-top: 60px;
   width: 95%;
   height: 70vh;
   padding: 50px 60px;
@@ -38,6 +38,11 @@
         font-weight: 700;
       }
     }
+  }
+
+  @include tablet {
+    height: auto;
+    margin-top: 40px;
   }
 
   @include mobile {

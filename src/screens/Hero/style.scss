@@ -71,6 +71,7 @@
   }
 
   @include mobile {
+    padding: 40px 0.8em 0;
     .custom-row {
       display: flex;
       flex-direction: column-reverse;

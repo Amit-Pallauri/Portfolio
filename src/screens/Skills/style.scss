@@ -1,0 +1,169 @@
+@import "../../styles/variables.scss";
+
+.skills-section {
+  padding: 6em 0;
+  // height: 100vh;
+
+  .skills-header {
+    margin-top: 1em;
+    h2 {
+      font-family: $theme-heading-font;
+      font-size: 4.4rem;
+    }
+  }
+
+  .icons-container {
+    width: 90%;
+    margin-top: 4em;
+
+    .icon-circle {
+      margin-top: 2em;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+
+      img {
+        cursor: pointer;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  }
+
+  .skill-items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .skill-item {
+      padding: 40px 60px;
+      margin: 20px 0;
+      width: 100%;
+      background-color: $theme-bg-color;
+
+      p {
+        color: $theme-text-color-fade;
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      .progress {
+        background-color: #40424d;
+        height: 5px;
+        .progress-bar {
+          background-color: white;
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    .skills-header {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .icons-container {
+      width: 90%;
+      margin: 2em auto;
+
+      .icon-circle {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .skill-items {
+      .skill-item {
+        padding: 40px 60px;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 3em 0.8em;
+    .skills-header {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .icons-container {
+      width: 90%;
+      margin: 1em auto;
+
+      .icon-circle {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .skill-items {
+      .skill-item {
+        padding: 40px 60px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@keyframes smoothScroll1 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes smoothScroll2 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes smoothScroll3 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes smoothScroll4 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+.score-75 {
+  animation: smoothScroll1 1s forwards;
+}
+
+.score-70 {
+  animation: smoothScroll2 1s forwards;
+}
+
+.score-80 {
+  animation: smoothScroll3 1s forwards;
+}
+
+.score-90 {
+  animation: smoothScroll4 1s forwards;
+}

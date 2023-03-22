@@ -31,13 +31,20 @@
     }
   }
 
+  @include tablet {
+    .service-header {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+
   @include mobile {
-    padding: 4em 0;
+    padding: 3em 0.8em;
 
     .service-header {
       margin-top: 1em;
       h2 {
-        font-family: $theme-heading-font;
         font-size: 2rem;
       }
     }

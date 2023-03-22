@@ -51,10 +51,10 @@ const Header = () => {
             </div>
             <div className="col-3 mob-hide">
               <div className="btn-container">
-                <div className="hire-me-btn" onClick={() => slideToSection("https://www.linkedin.com/in/amit-pallauri-18146a163/")}>
+                <a className="hire-me-btn link-tag" href="https://www.linkedin.com/in/amit-pallauri-18146a163/" target={"_blank"}>
                   <p>Hire me</p>
                   <img src={DoubleArrowIcon} alt="" />
-                </div>
+                </a>
               </div>
             </div>
             <div className="col-9 hambar-icon">
