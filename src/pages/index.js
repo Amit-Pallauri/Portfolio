@@ -32,7 +32,7 @@ export const Head = () => {
       <link rel="icon" type="image/png" href={Logo} sizes="32x32" />
       <meta property="og:locale" content="en_US" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-      <meta property="og:image" itemProp="image" content={"https://res.cloudinary.com/dk9ltkcb7/image/upload/v1679526255/scrren_pratbb.png"} />
+      <meta property="og:image" itemProp="image" content={"https://res.cloudinary.com/dk9ltkcb7/image/upload/v1679529719/scrren_3_hyfdg0.png"} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="627" />
       <meta property="og:image:type" content="image/png" />
