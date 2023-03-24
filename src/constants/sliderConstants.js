@@ -36,27 +36,21 @@ export const servicesSettings = {
 };
 
 export const skillSlider = {
-  infinite: true,
-  speed: 700,
-  autoplay: true,
-
-  dots: false,
-  accessibility: true,
-  arrows: false,
-  slidesToShow: 3.4,
-  slidesToScroll: 2,
-  swipeToSlide: true,
-  loop: true,
-
   responsive: [
     {
       breakpoint: 767,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
         infinite: true,
+        speed: 2000,
+        autoplay: true,
+        autoplaySpeed: 100,
         dots: false,
         accessibility: true,
+        arrows: false,
+        slidesToShow: 3.4,
+        slidesToScroll: 3,
+        swipeToSlide: true,
+        loop: true,
       },
     },
     {
