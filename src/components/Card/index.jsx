@@ -9,9 +9,11 @@ const Card = ({ data }) => {
         <div className="bg-image">
           <img src={"https://htmldemo.net/lendex/lendex/assets/images/project/project-slider-img-2.jpg"} />
         </div>
-        <div className="image">
-          <img className={data.class} src={data.image} />
-        </div>
+        <a href={data.link} target="_blank">
+          <div className="image">
+            <img className={data.class} src={data.image} />
+          </div>
+        </a>
       </div>
 
       <div className="content">
