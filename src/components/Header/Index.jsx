@@ -43,9 +43,9 @@ const Header = () => {
             <div className="col-7 mob-hide">
               <ul className="items">
                 <li onClick={() => slideToSection("/")}>Home</li>
-                <li onClick={() => slideToSection(`/#services`)}>Service</li>
+                <li onClick={() => slideToSection(`/#services`)}>Services</li>
                 <li onClick={() => showToast("Coming soon . . .")}>Blogs</li>
-                <li onClick={() => showToast("Coming soon . . .")}>Projects</li>
+                <li onClick={() => slideToSection(`/#projects`)}>Projects</li>
                 <li onClick={() => showToast("Coming soon . . .")}>Contact</li>
               </ul>
             </div>
@@ -70,9 +70,9 @@ const Header = () => {
           <Offcanvas.Body className="canvas-body">
             <ul className="items" onClick={handleToggle}>
               <li onClick={() => slideToSection("/")}>HOME</li>
-              <li onClick={() => slideToSection(`/#services`)}>SERVICE</li>
+              <li onClick={() => slideToSection(`/#services`)}>SERVICES</li>
               <li onClick={() => showToast("Coming soon . . .")}>BLOGS</li>
-              <li onClick={() => showToast("Coming soon . . .")}>PROJECTS</li>
+              <li onClick={() => slideToSection(`/#projects`)}>PROJECTS</li>
               <li onClick={() => showToast("Coming soon . . .")}>CONTACT</li>
             </ul>
             <div className="socials">

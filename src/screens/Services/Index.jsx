@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import VerticalCard from "../../components/VerticalCard";
-import { servicesSettings } from "../../constants/sliderConstants";
+import { servicesSlider } from "../../constants/sliderConstants";
 import "./style.scss";
 
 const ServicesSection = () => {
@@ -36,10 +36,10 @@ const ServicesSection = () => {
           </div>
           <div className="col-12">
             <div className="service-header">
-              <h2>Service, I Provide For My Clients.</h2>
+              <h2>Services, I Provide For My Clients.</h2>
             </div>
             <div className="cards-container">
-              <Slider {...servicesSettings}>
+              <Slider {...servicesSlider}>
                 {SerivicesData.map((el, i) => {
                   return <VerticalCard key={i} data={el} />;
                 })}

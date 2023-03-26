@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .services-section {
-  background: #2a2c39;
+  background: $theme-bg-color;
   // height: 120vh;
   padding: 6em 0;
   width: 100%;
@@ -15,22 +15,6 @@
     }
   }
 
-  .cards-container {
-    .slick-dots {
-      bottom: -40px;
-    }
-
-    .slick-dots .slick-active button:before {
-      font-size: 20px;
-      color: white;
-    }
-
-    .slick-dots li button:before {
-      font-size: 20px;
-      color: $theme-text-color-fade;
-    }
-  }
-
   @include tablet {
     .service-header {
       h2 {
@@ -40,7 +24,7 @@
   }
 
   @include mobile {
-    padding: 3em 0.8em;
+    padding: 3em 0.8em 5em;
 
     .service-header {
       margin-top: 1em;

@@ -9,6 +9,7 @@ import ServicesSection from "../screens/Services/Index";
 import Logo from "../images/logo.png";
 import { Toaster } from "react-hot-toast";
 import SkillsSection from "../screens/Skills";
+import ProjectsSection from "../screens/Projects";
 
 const IndexPage = () => {
   return (
@@ -17,6 +18,7 @@ const IndexPage = () => {
         <HeroSection />
         <ServicesSection />
         <SkillsSection />
+        <ProjectsSection />
       </Layout>
       <Toaster />
     </>
