@@ -60,7 +60,7 @@ const ProjectsSection = () => {
               </p>
             </div>
             <div className="projects-header">
-              <h2>My Complete Projects</h2>
+              <h2>Products, i have worked on</h2>
             </div>
           </div>
           <div className="col-lg-4">

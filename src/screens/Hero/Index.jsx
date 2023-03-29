@@ -46,7 +46,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="col-lg-5">
-              <div className="avatar">
+              <div className="avatar" data-aos-once="false" data-aos="fade-left" data-aos-duration="600" data-aos-delay="30">
                 <img src="https://htmldemo.net/lendex/lendex/assets/images/portrait/portrait-hero.png" alt="" />
               </div>
             </div>

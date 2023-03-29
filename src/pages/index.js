@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from "react";
 import HeroSection from "../screens/Hero/Index";
 import Layout from "../components/Layout/Index";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/index.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ServicesSection from "../screens/Services/Index";
 import Logo from "../images/logo.png";
 import { Toaster } from "react-hot-toast";
 import SkillsSection from "../screens/Skills";
 import ProjectsSection from "../screens/Projects";
+import Clients from "../screens/Clients";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "aos/dist/aos.css";
+import "../styles/index.scss";
+import Aos from "aos";
 
 const IndexPage = () => {
+  useEffect(() => {
+    Aos.init({ disable: "mobile" });
+  }, []);
   return (
     <>
       <Layout>
@@ -19,6 +25,7 @@ const IndexPage = () => {
         <ServicesSection />
         <SkillsSection />
         <ProjectsSection />
+        <Clients />
       </Layout>
       <Toaster />
     </>

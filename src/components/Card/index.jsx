@@ -3,7 +3,7 @@ import "./style.scss";
 
 const Card = ({ data }) => {
   return (
-    <div className="card-container">
+    <div className="card-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="80">
       <div className="image-container">
         <div className="overlay"></div>
         <div className="bg-image">

@@ -72,7 +72,6 @@ export const projectsSlider = {
   slidesToScroll: 1,
   swipeToSlide: true,
   loop: true,
-  gap: 20,
   responsive: [
     {
       breakpoint: 1240,
@@ -92,6 +91,44 @@ export const projectsSlider = {
         slidesToScroll: 1,
         infinite: true,
         dots: true,
+        accessibility: true,
+      },
+    },
+  ],
+};
+
+export const clientsSlider = {
+  dots: false,
+  accessibility: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  swipeToSlide: true,
+  loop: true,
+  speed: 2000,
+  autoplay: true,
+  autoplaySpeed: 100,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        accessibility: true,
+      },
+    },
+
+    {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
         accessibility: true,
       },
     },
