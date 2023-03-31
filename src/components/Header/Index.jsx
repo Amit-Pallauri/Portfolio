@@ -50,7 +50,7 @@ const Header = () => {
             </div>
             <div className="col-3 mob-hide">
               <div className="btn-container">
-                <a className="hire-me-btn link-tag" href="https://www.linkedin.com/in/amit-pallauri-18146a163/" target={"_blank"}>
+                <a className="hire-me-btn link-tag"  target={"_blank"} href="mailto:mail@amitpallauri.com?cc=apallauri@gmail.com">
                   <p>Hire me</p>
                   <img src={DoubleArrowIcon} alt="" />
                 </a>
