@@ -9,9 +9,7 @@ const Footer = () => {
         <div className="footer-content">
           <p>
             © 2023
-            <span>Portfolio</span>
-            Made with 💖 by
-            <span>Amit Pallauri</span>
+            <span>Amit Pallauri.</span>All rights reserved.
           </p>
           <div className="footer-img">
             <img src={Logo} alt="" className="logo" />

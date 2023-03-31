@@ -16,15 +16,16 @@
   }
 
   .client-box {
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin: 2em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid $theme-border-color;
-    padding: 60px 10px;
+    // border: 1px solid $theme-border-color;
+    padding: 30px 10px;
+    transform: all ease-in-out 2s;
 
     &:hover {
       background-color: $theme-border-color;
