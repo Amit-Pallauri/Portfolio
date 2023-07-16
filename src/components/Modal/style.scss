@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.custom-modal {
+  video {
+    width: 100%;
+  }
+  .custom-header {
+    background-color: $theme-bg-color;
+    border: 0;
+  }
+  .custom-body {
+    position: relative;
+    background-color: $theme-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .close-btn {
+      z-index: 1;
+      width: max-content;
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      padding: 20px;
+      right: 5%;
+      top: 5%;
+      border-radius: 50%;
+      background-color: rgb(217, 215, 215);
+      opacity: 1;
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+
+      @include mobile {
+        right: 7%;
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

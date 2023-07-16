@@ -20,28 +20,24 @@ const SkillsSection = () => {
     {
       label: "Communication",
       score: "75",
-      class: "score-75",
     },
     {
       label: "Leadership",
       score: "70",
-      class: "score-70",
     },
     {
       label: "Teamwork",
       score: "90",
-      class: "score-90",
     },
     {
       label: "Flexibility",
       score: "80",
-      class: "score-80",
     },
   ];
 
   const icons = [reactIcon, angularIcon, gatsbyIcon, nextIcon, htmlIcon, cssIcon, jsIcon, tsIcon, reduxIcon, gitIcon, nodeIcon, mongoIcon];
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -76,7 +72,21 @@ const SkillsSection = () => {
                   <div className="skill-item">
                     <p>{el.label}</p>
                     <div class="progress">
-                      <div class={`progress-bar ${el.class}`} role="progressbar" aria-valuenow={el.score} aria-valuemin="0" aria-valuemax="100" />
+                      {/* <div  role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style={{ width: `100%` }} /> */}
+                      <div
+                        data-aos-once="true"
+                        data-aos="slide-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="30"
+                        class="progress-bar"
+                        role="progressbar"
+                        style={{ width: `${el.score}%` }}
+                        aria-valuenow={el.score}
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        25%
+                      </div>
                     </div>
                   </div>
                 );

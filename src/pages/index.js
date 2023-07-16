@@ -16,6 +16,9 @@ import SkillsSection from "../screens/Skills";
 import "../styles/index.scss";
 
 const IndexPage = () => {
+  useEffect(() => {
+    Aos.init({ disable: "mobile" });
+  }, []);
   return (
     <>
       <Layout>

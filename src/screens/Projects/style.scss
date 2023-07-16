@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+
+.projects-section {
+  background: $theme-bg-color;
+  // height: 120vh;
+  padding: 6em 0 4em;
+  width: 100%;
+  scroll-margin-top: 3em;
+
+  .projects-header {
+    margin-top: 1em;
+    h2 {
+      font-family: $theme-heading-font;
+      font-size: 4.4rem;
+    }
+  }
+
+  .slider-btns {
+    display: flex;
+    justify-content: flex-end;
+    .btn-container {
+      cursor: pointer;
+      width: 95px;
+      height: 95px;
+      border: 1px solid $theme-border-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+
+      .icon {
+        color: $theme-text-color-fade;
+      }
+    }
+
+    .btn-container:hover {
+      background-color: white;
+      transition: all 0.7s ease-in-out;
+
+      .icon {
+        color: rgba(26, 25, 25, 0.804);
+      }
+    }
+  }
+
+  .cards-container {
+    width: 95%;
+    margin: 3em auto;
+  }
+
+  @include tablet {
+    .projects-header {
+      margin-top: 1em;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    .slider-btns {
+      justify-content: flex-start;
+      .btn-container {
+        width: 80px;
+        height: 80px;
+        margin: 20px 6px 0;
+      }
+    }
+  }
+
+  @include mobile {
+    .projects-header {
+      margin-top: 1em;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .slider-btns {
+      justify-content: flex-start;
+      .btn-container {
+        width: 65px;
+        height: 65px;
+        margin: 20px 6px 0;
+      }
+    }
+  }
+}

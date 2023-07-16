@@ -1,0 +1,95 @@
+@import "../../styles/variables.scss";
+
+.card-container {
+  width: 95%;
+  margin: 0 20px;
+
+  .image-container {
+    position: relative;
+    height: 550px;
+    padding: 7em 6em 0;
+    overflow: hidden;
+
+    .bg-image {
+      background-image: url("https://htmldemo.net/lendex/lendex/assets/images/project/project-slider-img-2.jpg");
+      width: 40%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      background-color: $theme-bg-color-dark;
+      opacity: 0.95;
+    }
+
+    .image {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .small-image {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 3em;
+    h4 {
+      font-family: $theme-body-font;
+      color: white;
+      font-weight: 900;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .techs {
+      display: flex;
+      p {
+        margin-right: 10px;
+        color: $theme-text-color-fade;
+        font-weight: 500;
+        transition: all ease-in-out 0.3s;
+      }
+
+      p:hover {
+        color: white;
+      }
+    }
+  }
+
+  @include tablet {
+    .image-container {
+      padding: 4em 4em 0;
+    }
+  }
+
+  @include mobile {
+    .image-container {
+      padding: 5em 2em 0;
+    }
+  }
+}

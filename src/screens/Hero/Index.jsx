@@ -5,11 +5,12 @@ import loadable from "@loadable/component";
 import CustomModal from "../../components/Modal/index";
 import { useState } from "react";
 import loadingVideo from "../../images/loading.mp4";
-import HeroImage from "../..//images/home-image.png"
+import HeroImage from "../../images/home-image.png"
 import { StaticImage } from "gatsby-plugin-image";
 const Icofont = loadable(() => import("react-icofont"));
 
 const HeroSection = () => {
+  const [show, setShow] = useState(false);
   const downloadResume = () => {
     var link = document.createElement("a");
     link.href = "https://drive.google.com/file/d/1hacLbwe7EU6alrTt_4WtblSFTpRzuOAo/view?usp=sharing";

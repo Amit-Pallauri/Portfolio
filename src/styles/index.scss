@@ -66,3 +66,18 @@ body {
     display: none;
   }
 }
+
+// custom dots
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots .slick-active button:before {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  color: $theme-text-color-fade !important;
+}

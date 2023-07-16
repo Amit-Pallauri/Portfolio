@@ -95,12 +95,15 @@
 
   .items {
     height: 100%;
+    width: 90%;
+    margin-left: auto;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
     li {
+      font-size: 20px;
       color: $theme-text-color-fade;
       font-weight: 700;
       cursor: pointer;

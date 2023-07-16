@@ -1,12 +1,11 @@
+import loadable from "@loadable/component";
+import { navigate } from "gatsby";
 import React, { useEffect, useState } from "react";
-import "./style.scss";
+import Offcanvas from "react-bootstrap/Offcanvas";
 import DoubleArrowIcon from "../../images/double-arrow.png";
 import HambarIcon from "../../images/hambar.png";
 import Logo from "../../images/logo.png";
-import { navigate } from "gatsby";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import loadable from "@loadable/component";
-import { showToast } from "../../utils/showToast";
+import "./style.scss";
 const Icofont = loadable(() => import("react-icofont"));
 
 const Header = () => {
@@ -32,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-      <section className={`header-container`}>
+      <header className={`header-container`}>
         <div className="container custom-container">
           <div className="row">
             <div className="col-2">
@@ -43,15 +42,15 @@ const Header = () => {
             <div className="col-7 mob-hide">
               <ul className="items">
                 <li onClick={() => slideToSection("/")}>Home</li>
-                <li onClick={() => slideToSection(`/#services`)}>Service</li>
-                <li onClick={() => showToast("Coming soon . . .")}>Blogs</li>
-                <li onClick={() => showToast("Coming soon . . .")}>Projects</li>
-                <li onClick={() => showToast("Coming soon . . .")}>Contact</li>
+                <li onClick={() => slideToSection(`/#services`)}>Services</li>
+                <li onClick={() => slideToSection(`/#skills`)}>Skills</li>
+                <li onClick={() => slideToSection(`/#projects`)}>Projects</li>
+                <li onClick={() => slideToSection(`/#clients`)}>Clients</li>
               </ul>
             </div>
             <div className="col-3 mob-hide">
               <div className="btn-container">
-                <a className="hire-me-btn link-tag" href="https://www.linkedin.com/in/amit-pallauri-18146a163/" target={"_blank"}>
+                <a className="hire-me-btn link-tag"  target={"_blank"} href="mailto:mail@amitpallauri.com?cc=apallauri@gmail.com">
                   <p>Hire me</p>
                   <img src={DoubleArrowIcon} alt="" />
                 </a>
@@ -70,10 +69,10 @@ const Header = () => {
           <Offcanvas.Body className="canvas-body">
             <ul className="items" onClick={handleToggle}>
               <li onClick={() => slideToSection("/")}>HOME</li>
-              <li onClick={() => slideToSection(`/#services`)}>SERVICE</li>
-              <li onClick={() => showToast("Coming soon . . .")}>BLOGS</li>
-              <li onClick={() => showToast("Coming soon . . .")}>PROJECTS</li>
-              <li onClick={() => showToast("Coming soon . . .")}>CONTACT</li>
+              <li onClick={() => slideToSection(`/#services`)}>SERVICES</li>
+              <li onClick={() => slideToSection(`/#skills`)}>SKILLS</li>
+              <li onClick={() => slideToSection(`/#projects`)}>PROJECTS</li>
+              <li onClick={() => slideToSection(`/#clients`)}>CLIENTS</li>
             </ul>
             <div className="socials">
               <div className="round-icon">
@@ -90,7 +89,7 @@ const Header = () => {
             </div>
           </Offcanvas.Body>
         </Offcanvas>
-      </section>
+      </header>
     </>
   );
 };

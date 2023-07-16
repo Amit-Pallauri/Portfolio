@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+.footer-section {
+  padding: 1em 0;
+  border-top: 1px solid $theme-border-color;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-weight: 500;
+      color: $theme-text-color-fade;
+      span {
+        margin: 0 10px;
+        color: $theme-text-color;
+        font-weight: 700;
+      }
+      text-align: start;
+    }
+
+    .footer-img {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 60px;
+      }
+    }
+
+    @include tablet {
+      flex-direction: row !important;
+      p {
+        padding: 0 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column-reverse;
+      p {
+        padding: 0 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}

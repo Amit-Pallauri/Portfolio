@@ -5,7 +5,7 @@ const Icofont = loadable(() => import("react-icofont"));
 
 const VerticalCard = ({ data }) => {
   return (
-    <div className="verticalcard-section">
+    <div className="verticalcard-section" data-aos-once="false" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="30">
       <div className="header-icon">
         <Icofont icon={data.icon} className="icon" />
       </div>
