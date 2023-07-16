@@ -1,14 +1,19 @@
-import React, { useState, useEffect } from "react";
-import HeroSection from "../screens/Hero/Index";
-import Layout from "../components/Layout/Index";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/index.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import ServicesSection from "../screens/Services/Index";
-import Logo from "../images/logo.png";
+import React, { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import Layout from "../components/Layout";
+import Logo from "../images/logo.png";
+import Clients from "../screens/Clients";
+import ContactUs from "../screens/Contact";
+import HeroSection from "../screens/Hero";
+import ProjectsSection from "../screens/Projects";
+import ServicesSection from "../screens/Services";
 import SkillsSection from "../screens/Skills";
+import "../styles/index.scss";
 
 const IndexPage = () => {
   return (
@@ -17,6 +22,9 @@ const IndexPage = () => {
         <HeroSection />
         <ServicesSection />
         <SkillsSection />
+        <ProjectsSection />
+        <Clients />
+        <ContactUs />
       </Layout>
       <Toaster />
     </>
