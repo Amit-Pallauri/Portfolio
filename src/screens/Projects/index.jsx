@@ -6,6 +6,7 @@ import loadable from "@loadable/component";
 import Card from "../../components/Card";
 import xuppiImage from "../../images/xuppi.png";
 import zeeImage from "../../images/zee.png";
+import kanbanImage from "../../images/kanban.png";
 import { useRef } from "react";
 const Icofont = loadable(() => import("react-icofont"));
 
@@ -15,6 +16,7 @@ const ProjectsSection = () => {
     {
       name: "Xuppi - Social Commerce",
       image: xuppiImage,
+      githubLink: null,
       link: "https://xuppi.com/",
       techs: ["NextJS", "Typescript", "Agora"],
       class: "",
@@ -22,28 +24,43 @@ const ProjectsSection = () => {
     {
       name: "ZeeZest - Contet rich platform.",
       image: zeeImage,
+      githubLink: null,
       link: "https://zeezest.com/",
       techs: ["NextJS", "AngularJs", "NodeJS", "MongoDB"],
       class: "",
     },
     {
       name: "Home Seek - Find a new place to call, home",
-      image: "https://images.unsplash.com/photo-1635286756403-9d401732a2e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=379&q=80",
-      link: "https://github.com/Amit-Pallauri/home-seek",
+      image:
+        "https://images.unsplash.com/photo-1635286756403-9d401732a2e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=379&q=80",
+      githubLink: "https://github.com/Amit-Pallauri/home-seek",
+      link: null,
       techs: ["React", "MongoDB", "NodeJS", "ExpressJS"],
       class: "small-image",
     },
     {
+      name: "Knaban Board",
+      image: kanbanImage,
+      githubLink: "https://github.com/Amit-Pallauri/kanban-board",
+      link: "https://board-kanban-trello.netlify.app",
+      techs: ["TypeScript", "ReactJs"],
+      class: "small-image",
+    },
+    {
       name: "Studious - Study, Teach & Earn",
-      image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      link: "https://github.com/Amit-Pallauri/udemy-clone",
+      image:
+        "https://images.unsplash.com/photo-1586880244406-556ebe35f282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      githubLink: "https://github.com/Amit-Pallauri/udemy-clone",
+      link: null,
       techs: ["React", "MongoDB", "NodeJS", "ExpressJS"],
       class: "small-image",
     },
     {
       name: "kitab e keeda - Find the best book reviewed",
-      image: "https://images.unsplash.com/photo-1544185310-0b3cf501672b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-      link: "https://github.com/Amit-Pallauri/kitab-e-keeda",
+      image:
+        "https://images.unsplash.com/photo-1544185310-0b3cf501672b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      link: null,
+      githubLink: "https://github.com/Amit-Pallauri/kitab-e-keeda",
       techs: ["React", "MongoDB", "NodeJS", "ExpressJS"],
       class: "small-image",
     },
@@ -65,10 +82,16 @@ const ProjectsSection = () => {
           </div>
           <div className="col-lg-4">
             <div className="slider-btns">
-              <div className="btn-container" onClick={() => sliderRef.current.slickPrev()}>
+              <div
+                className="btn-container"
+                onClick={() => sliderRef.current.slickPrev()}
+              >
                 <Icofont icon="icofont-rounded-double-left" className="icon" />
               </div>
-              <div className="btn-container" onClick={() => sliderRef.current.slickNext()}>
+              <div
+                className="btn-container"
+                onClick={() => sliderRef.current.slickNext()}
+              >
                 <Icofont icon="icofont-rounded-double-right" className="icon" />
               </div>
             </div>

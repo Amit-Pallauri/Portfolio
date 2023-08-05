@@ -11,7 +11,8 @@ const HeroSection = () => {
   const [show, setShow] = useState(false);
   const downloadResume = () => {
     var link = document.createElement("a");
-    link.href = "https://drive.google.com/file/d/1hacLbwe7EU6alrTt_4WtblSFTpRzuOAo/view?usp=sharing";
+    link.href =
+      "https://drive.google.com/file/d/1tMMnBI2v64Swg7hHn5P0O7SpfSZynD9U/view?usp=drive_link";
     // link.download = "AMIT_PALLAURI_3Y_MERN.pdf";
     link.target = "_blank";
     link.dispatchEvent(new MouseEvent("click"));
@@ -30,7 +31,10 @@ const HeroSection = () => {
             <div className="col-lg-7">
               <h1 className="title smaller-title">Hello! I'm</h1>
               <h1 className="title">Amit Pallauri</h1>
-              <p className="subtitle">A software engineer with the curiosity and interest to solve real world problems</p>
+              <p className="subtitle">
+                A software engineer with the curiosity and interest to solve
+                real world problems
+              </p>
 
               <div className="resume-container">
                 <div className="resume-download-btn" onClick={downloadResume}>
@@ -46,8 +50,12 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="col-lg-5">
-              <div className="avatar" data-aos-once="false" data-aos="fade-left" data-aos-duration="600" data-aos-delay="30">
-                <img src="https://htmldemo.net/lendex/lendex/assets/images/portrait/portrait-hero.png" alt="" />
+              <div className="avatar">
+                <img
+                  src="https://htmldemo.net/lendex/lendex/assets/images/portrait/portrait-hero.png"
+                  alt=""
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
